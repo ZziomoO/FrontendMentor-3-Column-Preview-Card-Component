@@ -1,0 +1,60 @@
+body{
+    background-color: hsl(0, 0%, 95%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: white;
+    font-family: 'Lexend Deca', sans-serif;
+}
+main{
+    border-radius: 10px;
+    overflow: hidden;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+}
+div{
+    width: 280px;
+    padding: 40px;
+    box-sizing: border-box;
+}
+input[type=button]{
+    border-radius: 20px;
+    height: 40px;
+    width: 120px;
+    border: 2px solid hsl(0, 0%, 95%);
+    background-color: hsl(0, 0%, 95%);
+    cursor: pointer;
+    margin-top: 60px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+input[type=button]:hover{
+    background-color: transparent;
+    color: hsl(0, 0%, 95%);
+}
+.sedans_button{
+    color: hsl(31, 77%, 52%);
+}
+.suvs_button{
+    color: hsl(184, 100%, 22%);
+}
+.luxury_button{
+    color: hsl(179, 100%, 13%);
+}
+p{
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+h1{
+    font-family: 'Big Shoulders Display';
+    color: hsl(0, 0%, 95%);
+}
+@media only screen and (max-width: 700px) {
+    main{
+        flex-direction: column;
+    }
+    body{
+        height: auto;
+    }
+}
